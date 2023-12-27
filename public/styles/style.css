@@ -1,0 +1,241 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(312deg, rgba(255, 171, 247, 1) 0%, rgba(255, 184, 235, 1) 15%, rgba(255, 246, 174, 1) 78%, rgba(255, 255, 233, 1) 100%, rgba(2, 0, 36, 1) 100%);
+    }
+
+    nav {
+        background-color: #FF7171;
+        display: flex;
+        justify-content: center;
+        /* Center-align the items */
+        align-items: center;
+        padding: 1em;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        font-family: 'DM Serif Display', serif;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-links li {
+        font-weight: bold;
+        text-align: center;
+        margin-right: 10vh;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 21px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .logo img {
+        max-height: 30px;
+        padding: 2px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .text-section {
+        flex: 1;
+        padding: 8%;
+        color: #000000;
+        box-sizing: border-box;
+    }
+
+    .text-section h1 {
+        font-size: 50px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .text-section p {
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+    .image-section {
+        flex: 1;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: left;
+        /* Adjust the object-position as needed */
+    }
+
+    .centered {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 20px 80px;
+        font-size: 16px;
+        background-color: #FF7171;
+        color: white;
+        border: none;
+        cursor: pointer;
+        align-self: flex-start;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+
+    .secondpage {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .container {
+        max-width: 1360px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .centered-box {
+        background-color: #FF7171;
+        width: 400px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .centered-box h1 {
+       font-size: 50px;
+       margin-top: 1px;
+       margin-bottom: 1px;
+    }
+
+    .inner-container {
+        max-width: 2360px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60vh;
+    }
+
+    .image {
+        width: 300px;
+        height: 29vh;
+        background-color: black;
+    }
+
+    .tall-image {
+        width: 300px;
+        height: 60vh;
+        background-color: black;
+        margin-left: 20px;
+    }
+
+    .arrow {
+        height: 15px;
+        width: 15px;
+    }
+
+
+
+
+
+    /* Responsive Styles */
+
+    @media screen and (max-width: 600px) {
+
+
+
+        .nav-links {
+            display: none;
+        }
+
+        .logo img {
+            max-height: 30px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .secondpage {
+            padding: 10%;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 60vh;
+        }
+
+        .image {
+            width: 150px;
+            height: 30vh;
+            background-color: black;
+        }
+
+        .tall-image {
+            width: 150px;
+            height: 60vh;
+            background-color: black;
+            margin-left: 20px;
+        }
+
+
+    }
